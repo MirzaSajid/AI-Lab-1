@@ -1,0 +1,31 @@
+Thresholds are synthetic lab assumptions: score >= 70, attendance >= 75%.
+
+Case 1: pass_all
+  Input   : score=82, documents_complete=True, attendance_pct=88, financial_form_signed=True
+  Expected: Review
+  Actual  : Review
+  Reason  : all four conditions satisfied
+  Result  : PASS
+
+Case 2: fail_attendance
+  Input   : score=85, documents_complete=True, attendance_pct=60, financial_form_signed=True
+  Expected: Hold
+  Actual  : Hold
+  Reason  : attendance_ok failed (60 < 75)
+  Result  : PASS
+
+Case 3: fail_unsigned_form
+  Input   : score=85, documents_complete=True, attendance_pct=90, financial_form_signed=False
+  Expected: Hold
+  Actual  : Hold
+  Reason  : financial_form_signed failed (form unsigned)
+  Result  : PASS
+
+Case 4: boundary_inclusive
+  Input   : score=70, documents_complete=True, attendance_pct=75, financial_form_signed=True
+  Expected: Review
+  Actual  : Review
+  Reason  : all four conditions satisfied
+  Result  : PASS
+
+4/4 tests passed

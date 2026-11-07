@@ -1,0 +1,5 @@
+run | symbolic | threshold | disagreement
+baseline (70, 0.70) | Review | Review | False
+score only changed to 69 | Hold | Review | True
+probability only changed 0.69 | Review | Hold | True
+both changed (69, 0.69) | Hold | Hold | False
