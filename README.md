@@ -1,6 +1,6 @@
 # Lab 1 - Introduction to AI & Paradigms
 
-**Student:** Rasikh Ali (42365) | **Course:** CAI601400 - Artificial Intelligence | **Lab:** 1 (CLO1)
+**Student:** Sajid Hussain (Bsaim-046) | **Course:** CAI601400 - Artificial Intelligence | **Lab:** 1 (CLO1)
 
 Compares a transparent rule-based scholarship pre-screening checker with a simple
 probability-threshold rule. "Review" = flag for a **human** reviewer, not an award
